@@ -18,8 +18,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="testgradleprj_main" target="1.8" />
-      <module name="testgradleprj_test" target="1.8" />
+      <module name="CustomCorrelationExample_main" target="1.8" />
+      <module name="CustomCorrelationExample_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

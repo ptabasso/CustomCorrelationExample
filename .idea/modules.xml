@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testgradleprj.iml" filepath="$PROJECT_DIR$/.idea/modules/testgradleprj.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testgradleprj_main.iml" filepath="$PROJECT_DIR$/.idea/modules/testgradleprj_main.iml" group="testgradleprj" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testgradleprj_test.iml" filepath="$PROJECT_DIR$/.idea/modules/testgradleprj_test.iml" group="testgradleprj" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CustomCorrelationExample.iml" filepath="$PROJECT_DIR$/.idea/modules/CustomCorrelationExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CustomCorrelationExample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CustomCorrelationExample_main.iml" group="CustomCorrelationExample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CustomCorrelationExample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CustomCorrelationExample_test.iml" group="CustomCorrelationExample" />
     </modules>
   </component>
 </project>
