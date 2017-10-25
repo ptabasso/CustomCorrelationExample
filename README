@@ -6,7 +6,9 @@
 
 Exemple:
 Répertoire Agent Appd 4357: (/Users/pejman/AppDynamics/4357/ver4.3.5.7)
+
 Server:  java -javaagent:/Users/pejman/AppDynamics/4357/ver4.3.5.7/javaagent.jar -Dappdynamics.controller.hostName=osxpejman.local -Dappdynamics.controller.port=8099 -Dappdynamics.agent.applicationName=CC -Dappdynamics.agent.tierName=Server -Dappdynamics.agent.nodeName=N2 -Dappdynamics.agent.accountName=customer1 -Dappdynamics.agent.accountAccessKey=2f2db5e6-f2c7-4efd-b20d-149c6efa966d -Dfile.encoding=UTF-8 -classpath "/Users/pejman/Java/testgradleprj/build/classes/main" com.appd.pej.MyServer
+
 Client:  java -javaagent:/Users/pejman/AppDynamics/4357/ver4.3.5.7/javaagent.jar -Dappdynamics.controller.hostName=osxpejman.local -Dappdynamics.controller.port=8099 -Dappdynamics.agent.applicationName=CC -Dappdynamics.agent.tierName=Client -Dappdynamics.agent.nodeName=N1 -Dappdynamics.agent.accountName=customer1 -Dappdynamics.agent.accountAccessKey=2f2db5e6-f2c7-4efd-b20d-149c6efa966d -Dfile.encoding=UTF-8 -classpath "/Users/pejman/Java/testgradleprj/build/classes/main" com.appd.pej.MyClient
 
 6. Créer un Custom POJO sur:
