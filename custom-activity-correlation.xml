@@ -1,0 +1,50 @@
+<activities>
+    <producer>
+        <instrumentation>
+            <class-name>com.appd.pej.MyClient</class-name>
+            <method-name>writeMessage</method-name>
+            <match-type>MATCHES_CLASS</match-type>
+        </instrumentation>
+        <identifiers>
+            <identifier name="HOST">
+                <data-gatherer-type>POSITION</data-gatherer-type>
+                <position>0</position>
+                <getter-chain>getHost()</getter-chain>
+                <transformer-type>GETTER_METHODS</transformer-type>
+            </identifier>
+        </identifiers>
+        <correlation>
+            <payload-pointer>
+                <data-gatherer-type>POSITION</data-gatherer-type>
+                <position>0</position>
+                <getter-chain>this</getter-chain>
+                <transformer-type>GETTER_METHODS</transformer-type>
+            </payload-pointer>
+            <payload-operation>
+                <access-type>method</access-type>
+                <access-method>put</access-method>
+                <param-types>java.lang.String,java.lang.String</param-types>
+            </payload-operation>
+        </correlation>
+    </producer>
+    <consumer identify-transaction="true">
+        <instrumentation>
+            <class-name>com.appd.pej.MyServer</class-name>
+            <method-name>processMessage</method-name>
+            <match-type>MATCHES_CLASS</match-type>
+        </instrumentation>
+        <correlation>
+            <payload-pointer>
+                <data-gatherer-type>POSITION</data-gatherer-type>
+                <position>0</position>
+                <getter-chain>getInnerPayload()</getter-chain>
+                <transformer-type>GETTER_METHODS</transformer-type>
+            </payload-pointer>
+            <payload-operation>
+                <access-type>method</access-type>
+                <access-method>get</access-method>
+                <param-types>java.lang.Object</param-types>
+            </payload-operation>
+        </correlation>
+    </consumer>
+</activities>
